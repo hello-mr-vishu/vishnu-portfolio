@@ -1,6 +1,4 @@
-import { BiGitRepoForked } from "react-icons/bi";
-import { AiFillGithub, AiFillEye } from "react-icons/ai";
-import { ImBook } from "react-icons/im";
+import { AiFillGithub } from "react-icons/ai";
 
 import portfolio from "../images/portfolio.png";
 

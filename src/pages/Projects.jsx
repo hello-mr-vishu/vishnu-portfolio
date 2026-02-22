@@ -161,7 +161,7 @@ export default function Projects() {
       if (sort === 'az') return (a.title || '').localeCompare(b.title || '');
       return 0; // 'recent' keeps config order
     });
-  }, [category, query, sort, lang]);
+  }, [projectConfig, category, query, sort, lang]);
 
   const categoryChips = useMemo(() => {
     const labels = new Set(['All']); // keep sentinel value; display text stays as-is

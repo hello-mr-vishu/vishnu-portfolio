@@ -3,19 +3,13 @@ import {
   SiFastapi,
   SiDocker,
   SiReact,
-  SiJavascript,
-  SiCss3,
-  SiHtml5,
   SiMongodb,
   SiScikitlearn,
   SiPandas,
   SiFlask,
 } from "react-icons/si";
-import { GrMysql } from "react-icons/gr";
 import { FaGitAlt, FaAws, FaDatabase, FaBrain, FaRobot } from "react-icons/fa";
-import { TbApi } from "react-icons/tb";
 import React from "react";
-import StorageIcon from "@mui/icons-material/Storage";
 import QueryStatsIcon from "@mui/icons-material/QueryStats";
 import TerminalIcon from "@mui/icons-material/Terminal";
 

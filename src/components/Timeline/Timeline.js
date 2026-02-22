@@ -1,6 +1,6 @@
 import React from 'react';
 import { Paper, Typography, Box, Stack, Chip, useMediaQuery } from '@mui/material';
-import { alpha, useTheme } from '@mui/material/styles';
+import { useTheme } from '@mui/material/styles';
 import {
   Timeline as MuiTimeline,
   TimelineItem,

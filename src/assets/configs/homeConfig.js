@@ -1,9 +1,6 @@
 import React from "react";
 import { BsClipboardData } from "react-icons/bs";
-import { DiCodeigniter } from "react-icons/di";
-import { GiCommercialAirplane } from "react-icons/gi";
-import { FaMobileAlt, FaLaptopCode, FaUniversity, FaCertificate } from "react-icons/fa";
-import { BiRocket } from "react-icons/bi";
+import { FaLaptopCode, FaUniversity } from "react-icons/fa";
 
 const homeConfig = {
   greeting_i18n: {
