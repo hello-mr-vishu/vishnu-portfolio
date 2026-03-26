@@ -6,6 +6,21 @@ import React from 'react';
 
 const projectConfig = [
   {
+    id: "project-12",
+    title: "Conjunctiva Anemia Detection",
+    category: { en: "AI / Machine Learning", es: "IA / Aprendizaje Automático" },
+    tags: ["Streamlit", "TensorFlow", "Deep Learning", "Python"],
+    description_i18n: {
+      en: "A machine learning-powered web application that detects anemia rapidly by analyzing close-up images of the conjunctiva using a custom CNN architecture.",
+      es: "Una aplicación web impulsada por aprendizaje automático que detecta anemia rápidamente analizando imágenes de primer plano de la conjuntiva mediante una arquitectura CNN personalizada."
+    },
+    links: [
+      { name: "repo", url: "https://github.com/hello-mr-vishu/Anemia-Conjuctiva", icon: <AiFillGithub /> }
+    ],
+    image: "https://images.unsplash.com/photo-1583912265922-98fcbf2eb398?auto=format&fit=crop&q=80&w=2074&ixlib=rb-4.0.3",
+    target: "_blank"
+  },
+  {
     id: "project-8",
     title: "Shinobi Monitoring System",
     category: { en: "Backend & Automation", es: "Backend y Automatización" },
@@ -52,15 +67,15 @@ const projectConfig = [
   },
   {
     id: "project-5",
-    title: "hawa.ai – Multi-Agent AI Travel Concierge",
+    title: "hawa-ai — Production Multi-Agent Travel Planner",
     category: { en: "AI & Multi-Agent Systems", es: "IA y Sistemas Multiagentes" },
-    tags: ["Python", "Google ADK", "Multi-Agent"],
+    tags: ["Python", "Google ADK", "FastAPI", "Multi-Agent"],
     description_i18n: {
-      en: "Engineered a production-style multi-agent AI system coordinating planner and tool-specialized agents for contextual travel recommendations. Built tool-integrated agents grounding LLM outputs using real-time web search and OpenStreetMap geodata. Designed a scalable orchestration layer using Google ADK.",
-      es: "Diseñé un sistema de inteligencia artificial multiagente para recomendaciones de viajes. Desarrollé agentes con integración de herramientas utilizando búsqueda web en tiempo real y OpenStreetMap."
+      en: "A production-ready travel planning API built on Google ADK using a multi-agent pipeline. Features a sequential planner orchestrating specialized agents (weather, itinerary, budget, news, places) that share session history via SqliteSessionService for multi-turn conversations and structured trip planning.",
+      es: "Una API de planificación de viajes lista para producción construida en Google ADK utilizando un pipeline multiagente. Cuenta con un planificador secuencial que orquesta agentes especializados (clima, itinerario, presupuesto, noticias y lugares) que comparten el historial de la sesión para conversaciones de múltiples turnos."
     },
     links: [
-      { name: "repo", url: "https://github.com/hello-mr-vishu/hawa.ai", icon: <AiFillGithub /> }
+      { name: "repo", url: "https://github.com/hello-mr-vishu/hawa-ai", icon: <AiFillGithub /> }
     ],
     image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=2074&ixlib=rb-4.0.3",
     target: "_blank"
