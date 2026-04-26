@@ -1,6 +1,12 @@
 import { AiFillGithub } from "react-icons/ai";
 
 import portfolio from "../images/portfolio.png";
+import anemia from "../images/anemia detection.jpg";
+import shinobi from "../images/shinobi.jpg";
+import medical from "../images/medical.jpg";
+import linc from "../images/linc.png";
+import sonar from "../images/sonar.webp";
+
 
 import React from 'react';
 
@@ -17,7 +23,7 @@ const projectConfig = [
     links: [
       { name: "repo", url: "https://github.com/hello-mr-vishu/Anemia-Conjuctiva", icon: <AiFillGithub /> }
     ],
-    image: "https://images.unsplash.com/photo-1583912265922-98fcbf2eb398?auto=format&fit=crop&q=80&w=2074&ixlib=rb-4.0.3",
+    image: anemia,
     target: "_blank"
   },
   {
@@ -32,7 +38,7 @@ const projectConfig = [
     links: [
       { name: "repo", url: "https://github.com/hello-mr-vishu/shinobi", icon: <AiFillGithub /> }
     ],
-    image: "https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3",
+    image: shinobi,
     target: "_blank"
   },
   {
@@ -92,7 +98,7 @@ const projectConfig = [
     links: [
       { name: "repo", url: "https://github.com/hello-mr-vishu/Medical-RAG", icon: <AiFillGithub /> }
     ],
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3",
+    image: medical,
     target: "_blank"
   },
   {
@@ -107,7 +113,7 @@ const projectConfig = [
     links: [
       { name: "repo", url: "https://github.com/hello-mr-vishu/LinC", icon: <AiFillGithub /> }
     ],
-    image: portfolio,
+    image: linc,
     target: "_blank"
   },
   {
@@ -150,9 +156,9 @@ const projectConfig = [
       es: "Diseñé un pipeline de ML supervisado para clasificar reflejos de señales de sonar en categorías peligrosas (Mina) frente a seguras (Roca). Apliqué modelado probabilístico y evalué el rendimiento priorizando la reducción de falsos negativos de alto riesgo."
     },
     links: [
-      { name: "repo", url: "https://github.com/hello-mr-vishu/", icon: <AiFillGithub /> }
+      { name: "repo", url: "https://github.com/hello-mr-vishu/Sonar-Signal-Classification-Rock-vs-Mine-Detection", icon: <AiFillGithub /> }
     ],
-    image: "https://images.unsplash.com/photo-1544473244-f6895e69da8e?auto=format&fit=crop&q=80&w=2072&ixlib=rb-4.0.3",
+    image: sonar,
     target: "_blank"
   },
   {

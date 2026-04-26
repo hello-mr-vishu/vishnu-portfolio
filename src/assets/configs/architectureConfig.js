@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaBrain, FaRobot, FaNetworkWired } from 'react-icons/fa';
+import ai_brain from "../images/AI Brain.png";
 
 /**
  * Configuration for AI System Architecture deep dives.
@@ -11,7 +12,7 @@ const architectureConfig = [
         summary: 'Natural Language → API Orchestration Layer',
         tags: ['Agentic AI', 'Tool-Using Agents', 'FastAPI'],
         icon: <FaBrain size={40} color="#38bdf8" />,
-        image: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&q=80&w=800',
+        image: ai_brain,
         details: {
             problem: 'Enterprise users need to perform complex, multi-step actions across internal APIs. Traditional dashboards are rigid, fragmented, and cognitively heavy.\n\nBrain AI replaces UI navigation with natural language execution.',
             overview: 'Brain AI functions as an orchestration middleware layer:\n\nUser → Intent Parser → Router → Tool Execution → Validation → Response Generator\n\nIt separates reasoning from execution, ensuring LLM outputs never directly trigger unsafe actions.',

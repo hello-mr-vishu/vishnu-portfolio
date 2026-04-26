@@ -55,7 +55,7 @@ const homeConfig = {
         en: "Built scalable AI agents for automated meeting transcription, speaker diarization, and insights generation. Designed scalable AI workflows for automated support ticket processing using LLM-powered reasoning and NLP pipelines.",
         es: "Construí agentes de IA escalables para la transcripción automatizada de reuniones y diseñé flujos de trabajo de IA para el procesamiento de tickets de soporte técnico."
       },
-      date: "Oct 2025 - Present",
+      date: "Oct 2025 - Mar 2026",
       icon: <FaLaptopCode />,
       tags: ["ai", "ml", "nlp", "llms", "fastapi"],
     },
@@ -67,7 +67,7 @@ const homeConfig = {
         en: "Built a Python-based Shinobi Monitoring System to track surveillance cameras status via APIs. Designed automated workflows to log metrics to Google Sheets with robust error handling and threshold-based alerting.",
         es: "Construí un sistema de monitoreo en Python para rastrear el estado de las cámaras de vigilancia a través de API y registros en Google Sheets."
       },
-      date: "Jul 2025",
+      date: "Jun 2025 - Jul 2025",
       icon: <FaLaptopCode />,
       tags: ["python", "api", "automation", "shinobi"],
     },
@@ -91,7 +91,7 @@ const homeConfig = {
         en: "Pursuing Bachelor's of Technology with a CGPA of 8.83/10.",
         es: "Cursando Licenciatura en Tecnología con un CGPA de 8.83/10."
       },
-      date: "2022 - Present",
+      date: "2022 - 2026 | Visakhapatnam",
       icon: <FaUniversity />,
       tags: ["ai", "data-science", "b-tech"],
     },
