@@ -1,6 +1,5 @@
 import { AiFillGithub } from "react-icons/ai";
 
-import portfolio from "../images/portfolio.png";
 import anemia from "../images/anemia detection.jpg";
 import shinobi from "../images/shinobi.jpg";
 import medical from "../images/medical.jpg";
