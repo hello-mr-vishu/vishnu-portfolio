@@ -160,7 +160,6 @@ export default function Blogs() {
   const t = UI[lang];
 
   const canonical = typeof window !== 'undefined' ? window.location.href : undefined;
-  const EMAIL = process.env.EMAIL || '';
 
   const categories = useMemo(() => {
     const set = new Set(['All']);

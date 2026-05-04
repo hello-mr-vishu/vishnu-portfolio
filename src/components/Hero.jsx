@@ -4,7 +4,6 @@ import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome';
 import SecurityIcon from '@mui/icons-material/Security';
 import { useLang } from '../utils/i18n';
-import { withUtm } from '../utils/withUtm';
 
 const UI = {
   en: {
@@ -42,10 +41,6 @@ const UI = {
 export default function Hero() {
   const [lang] = useLang();
   const t = UI[lang] || UI.en;
-  const EMAIL = process.env.EMAIL || '';
-  const mailHref = EMAIL
-    ? withUtm(`mailto:${EMAIL}?subject=${encodeURIComponent(t.subject)}`, 'hero_cta')
-    : '#';
 
   return (
     <Box
