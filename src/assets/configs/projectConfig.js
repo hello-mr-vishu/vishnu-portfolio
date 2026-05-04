@@ -5,11 +5,27 @@ import shinobi from "../images/shinobi.jpg";
 import medical from "../images/medical.jpg";
 import linc from "../images/linc.png";
 import sonar from "../images/sonar.webp";
+import threatrag from "../images/ThreatRAG.png";
 
 
 import React from 'react';
 
 const projectConfig = [
+  {
+    id: "project-13",
+    title: "ThreatRAG",
+    category: { en: "AI / Cyber Threat Intelligence", es: "IA / Ciberinteligencia" },
+    tags: ["RAG", "LLMs", "Streamlit", "Python", "FAISS"],
+    description_i18n: {
+      en: "ThreatRAG is a retrieval‑augmented generation system for cyber threat intelligence that checks its own work against NVD, CWE/CAPEC, and MITRE ATT&CK and outputs metrics for how trustworthy the answer is.",
+      es: "ThreatRAG es un sistema de generación aumentada por recuperación para inteligencia de amenazas cibernéticas que verifica su propio trabajo contra NVD, CWE/CAPEC y MITRE ATT&CK, emitiendo métricas de confiabilidad."
+    },
+    links: [
+      { name: "repo", url: "https://github.com/hello-mr-vishu/ThreatRAG", icon: <AiFillGithub /> }
+    ],
+    image: threatrag,
+    target: "_blank"
+  },
   {
     id: "project-12",
     title: "Conjunctiva Anemia Detection",

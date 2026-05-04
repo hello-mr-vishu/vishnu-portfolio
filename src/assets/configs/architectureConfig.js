@@ -1,11 +1,32 @@
 import React from 'react';
-import { FaBrain, FaRobot, FaNetworkWired } from 'react-icons/fa';
+import { FaBrain, FaRobot, FaNetworkWired, FaShieldAlt } from 'react-icons/fa';
 import ai_brain from "../images/AI Brain.png";
+import threatrag from "../images/ThreatRAG.png";
 
 /**
  * Configuration for AI System Architecture deep dives.
  */
 const architectureConfig = [
+    {
+        id: 'threatrag-verified-pipeline',
+        title: 'ThreatRAG',
+        summary: 'Verified RAG Pipeline for Cyber Threat Intelligence',
+        tags: ['RAG', 'Cybersecurity', 'MITRE ATT&CK', 'Anthropic Claude'],
+        icon: <FaShieldAlt size={40} color="#f87171" />,
+        image: threatrag,
+        details: {
+            problem: 'LLM-based systems can generate convincing but unverified threat intelligence (hallucinated CVEs, wrong CVSS, incorrect ATT&CK mappings). Acting on incorrect CTI wastes resources and misses real attacks.',
+            overview: 'ThreatRAG is a retrieval-augmented generation system that checks its own work against authoritative sources (NVD, CWE/CAPEC, and MITRE ATT&CK) and outputs quantitative trustworthiness metrics.\n\nQuery Parsing → Hybrid Retrieval → Constrained Generation → Post-Generation Verification → ATT&CK Grounding → Metrics Computation.',
+            components: [
+                { name: 'Hybrid Retriever', desc: 'Combines Dense (FAISS), Sparse (BM25), and Graph (MITRE ATT&CK STIX) retrieval fused via Reciprocal Rank Fusion.' },
+                { name: 'Constrained Generator', desc: 'LLM restricted to an allow-list of identifiers, forcing structural compliance and evidence traceability.' },
+                { name: 'Verification Engine', desc: 'Decomposes text into atomic claims and validates them against external APIs (NVD) and structural mappings.' }
+            ],
+            decisions: '• Separated generation and verification into distinct phases, using Claude Sonnet for generation and Claude Haiku for faster decomposition.\n• Implemented local embeddings (all-MiniLM) and a local ATT&CK store to minimize external API dependencies.\n• Created domain-specific metrics (IFS, TAS, CP, TQS) instead of relying solely on generic LLM-as-a-judge scores.',
+            reliability_scale: '• Results marked as Flagged or Contradicted when API verifications fail or sources do not match.\n• Auto-correction mechanism optionally regenerates contradicted claims.\n• Caching layer implemented for NVD API calls to handle rate limits.',
+            lessons: '• Explicit verification against symbolic systems (like NVD or MITRE) provides substantially higher trust than relying on careful prompting alone.\n• Graph traversal combined with dense retrieval captures structural relationships that semantic similarity alone misses.'
+        }
+    },
     {
         id: 'brain-ai-orchestration',
         title: 'Brain AI',
