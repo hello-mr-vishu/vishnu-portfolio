@@ -108,7 +108,7 @@ export default function Hero() {
 
           {/* CTAs */}
           <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2}>
-            <Button href={mailHref} variant="contained" color="secondary" size="large" aria-label={t.ctaPrimary}>
+            <Button component="a" href="/contact" variant="contained" color="secondary" size="large" aria-label={t.ctaPrimary}>
               {t.ctaPrimary}
             </Button>
             <Button component="a" href="/projects" variant="outlined" size="large" sx={{ color: '#fff', borderColor: 'rgba(255,255,255,.5)' }}>

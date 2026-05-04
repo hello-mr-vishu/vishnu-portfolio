@@ -45,7 +45,8 @@ export default function Footer() {
         </Typography>
         <Stack direction="row" spacing={2} justifyContent="center" sx={{ mb: 3 }}>
           <Button
-            href={emailHref}
+            component="a"
+            href="/contact"
             variant="contained"
             color="secondary"
             aria-label={t.cta}

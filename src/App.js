@@ -19,6 +19,7 @@ import Blogs from './pages/Blogs';
 import Skills from './pages/Skills/Skills';
 import Architecture from './pages/Architecture';
 import SystemDetails from './pages/SystemDetails';
+import Contact from './pages/Contact';
 
 
 if (process.env.REACT_APP_TRACKING_ID) {
@@ -53,6 +54,7 @@ export default function App() {
               <Route path="/skills" element={<Skills />} />
               <Route path="/architecture" element={<Architecture />} />
               <Route path="/architecture/:id" element={<SystemDetails />} />
+              <Route path="/contact" element={<Contact />} />
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </Box>

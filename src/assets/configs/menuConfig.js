@@ -1,5 +1,5 @@
 import React from "react";
-import { AiFillCode, AiFillHome, AiOutlineGithub, AiOutlineApartment } from "react-icons/ai";
+import { AiFillCode, AiFillHome, AiOutlineGithub, AiOutlineApartment, AiOutlineMail } from "react-icons/ai";
 import { BsMedium } from "react-icons/bs";
 
 const menuConfig = {
@@ -42,6 +42,14 @@ const menuConfig = {
       title_i18n: { en: "Skills", es: "Habilidades" },
       path: "/skills",
       icon: <AiFillCode size={35} />,
+      className: "nav-text",
+    },
+    {
+      id: "menu-5",
+      title: "Contact",
+      title_i18n: { en: "Contact", es: "Contacto" },
+      path: "/contact",
+      icon: <AiOutlineMail size={35} />,
       className: "nav-text",
     }
   ],

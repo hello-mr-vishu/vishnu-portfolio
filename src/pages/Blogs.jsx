@@ -93,7 +93,7 @@ const BlogCard = ({ item, lang = 'en', ui = UI.en }) => {
   return (
     <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column', backgroundColor: '#1e293b', color: '#f8fafc', borderRadius: 4, border: '1px solid #334155', boxShadow: '0 6px 20px rgba(0,0,0,0.2)', transition: 'transform 0.2s, box-shadow 0.2s', '&:hover': { transform: 'translateY(-4px)', boxShadow: '0 10px 28px rgba(0,0,0,0.35)' } }}>
       {item.image && (
-        <Box sx={{ position: 'relative', pt: '56.25%', overflow: 'hidden' }}>
+        <Box sx={{ position: 'relative', pt: '45%', overflow: 'hidden' }}>
           <CardMedia
             component="img"
             image={item.image}
@@ -110,7 +110,7 @@ const BlogCard = ({ item, lang = 'en', ui = UI.en }) => {
         </Box>
       )}
 
-      <CardContent sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', gap: 1 }}>
+      <CardContent sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', gap: 1, p: 2 }}>
         <Typography variant="h6" fontWeight={800} sx={{ letterSpacing: -0.2, color: '#38bdf8' }}>
           {item.title}
         </Typography>
@@ -125,7 +125,7 @@ const BlogCard = ({ item, lang = 'en', ui = UI.en }) => {
           )}
           {isNew && <Chip size="small" sx={{ bgcolor: '#38bdf8', color: '#0f172a', fontWeight: 700 }} label={ui.new} />}
         </Stack>
-        <Typography variant="body2" sx={{ color: '#cbd5e1' }}>{desc}</Typography>
+        <Typography variant="body2" sx={{ color: '#cbd5e1', display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>{desc}</Typography>
       </CardContent>
 
       <CardActions sx={{ px: 2, pb: 2, pt: 0, justifyContent: 'space-between' }}>
@@ -330,7 +330,7 @@ export default function Blogs() {
             <Button size="small" variant="contained" sx={{ bgcolor: '#38bdf8', color: '#0f172a', fontWeight: 700, '&:hover': { bgcolor: '#0284c7' } }} href="/projects">
               {t.stripSee}
             </Button>
-            <Button size="small" variant="outlined" sx={{ color: '#38bdf8', borderColor: '#38bdf8', '&:hover': { borderColor: '#38bdf8', bgcolor: 'rgba(56, 189, 248, 0.1)' } }} href={withUtm(EMAIL ? `mailto:${EMAIL}` : '#', 'blogs_inline_cta')}>
+            <Button component="a" size="small" variant="outlined" sx={{ color: '#38bdf8', borderColor: '#38bdf8', '&:hover': { borderColor: '#38bdf8', bgcolor: 'rgba(56, 189, 248, 0.1)' } }} href="/contact">
               {t.stripTalk}
             </Button>
           </Stack>
