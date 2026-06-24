@@ -7,6 +7,7 @@ import Timeline from '../../components/Timeline/Timeline';
 import Seo from '../../components/Seo';
 import homeConfig from '../../assets/configs/homeConfig';
 import Hero from '../../components/Hero';
+import Certifications from '../../components/Certifications';
 import { useLang } from '../../utils/i18n';
 
 export default function Home() {
@@ -76,6 +77,10 @@ export default function Home() {
         <Box sx={{ width: '100%', maxWidth: '960px' }}>
           <Timeline items={timelineItems} />
         </Box>
+      </Container>
+
+      <Container maxWidth="lg" sx={{ pb: 8 }}>
+        <Certifications />
       </Container>
     </Box>
   );
